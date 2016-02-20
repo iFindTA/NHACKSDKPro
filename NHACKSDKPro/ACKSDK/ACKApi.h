@@ -25,6 +25,22 @@
 + (NSString *)idfa;
 
 /*!
+ *  @brief log function, default is YES
+ *
+ *  @param enable wether enabled
+ */
++ (void)enableLog:(BOOL)enable;
+
+/*!
+ *  @brief encypt data that transfer to server, default is YES
+ *
+ *  @attention this function has not been implemented
+ *
+ *  @param enable wether enabled
+ */
++ (void)enableEncryptTransfer:(BOOL)enable;
+
+/*!
  *  @brief start method for partber's app
  *  
  *  @Usage when the user has been dowload the partner's app and launch it then
@@ -69,7 +85,7 @@
  *
  *  @return result for authentication
  */
-+ (BOOL)startUserAuthentication:(NSString *)name withPhone:(NSString *)phone withID:(NSString *)nid;
++ (BOOL)startAuthenticationWithName:(NSString *)name withPhone:(NSString *)phone withID:(NSString *)nid;
 
 /*!
  *  @brief purchase or investment for user

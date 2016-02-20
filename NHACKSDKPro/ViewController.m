@@ -42,6 +42,8 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(purchaseEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    [ACKApi enableLog:false];
 }
 
 - (void)registerEvent {
@@ -52,7 +54,7 @@
 
 - (void)authenticationEvent {
     NSString *m_phone = [NSString stringWithFormat:@"13023622337"];
-    BOOL ret = [ACKApi startUserAuthentication:@"胡家驹" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
+    BOOL ret = [ACKApi startAuthenticationWithName:@"胡家驹" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
     NSLog(@"result : %zd",ret);
 }
 
