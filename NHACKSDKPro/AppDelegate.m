@@ -24,6 +24,8 @@ static NSString *ACK_APP_KEY   = @"4FCUND77NX2C4S";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //default is YES
+    [ACKApi enableLog:false];
     [ACKApi startWithAppkey:ACK_APP_KEY];
     
     return YES;

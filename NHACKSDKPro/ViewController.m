@@ -42,8 +42,6 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(purchaseEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-    
-    [ACKApi enableLog:false];
 }
 
 - (void)registerEvent {
