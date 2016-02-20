@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RDACK"
-  s.version      = "0.1.1"
+  s.version      = "1.1.1"
   s.summary      = "RDACK is an Objc Wrapper for aicaike."
   s.homepage     = "https://github.com/iFindTA"
   s.description  = "RDACK is an objc sdk wrapper for ios developer who was working with rd's application-aicaike"
