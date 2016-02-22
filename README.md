@@ -1,4 +1,4 @@
-# NHACKSDKPro
+# 爱财客终端SDK文档
 ACK SDK for ios developement
 #### 接入指南
 注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉XCode开发工具的基本使用方法，以及具有一定的编程知识基础等。
@@ -43,3 +43,9 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
     [ACKApi enableLog:true];
 ```
 具体在方法中所要完成的内容由你定义，具体可参考爱财客开发工具包中的[SDK Sample Demo](https://github.com/iFindTA/NHACKSDKPro)源码。
+
+
+
+* * *
+###### contact:
+**mail:nanhujiaju@gmail.com**
