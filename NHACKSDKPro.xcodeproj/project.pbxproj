@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		608356DE1C7AA163002FE317 /* libACKSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608356DD1C7AA163002FE317 /* libACKSDK.a */; };
+		608356E41C7AB590002FE317 /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608356E11C7AB590002FE317 /* Default-568@2x.png */; };
+		608356E51C7AB590002FE317 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 608356E21C7AB590002FE317 /* Default.png */; };
+		608356E61C7AB590002FE317 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 608356E31C7AB590002FE317 /* Default@2x.png */; };
+		608356EE1C7ABDCE002FE317 /* libACKSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608356ED1C7ABDCE002FE317 /* libACKSDK.a */; };
 		6083C1171C78366900D17320 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C1161C78366900D17320 /* main.m */; };
 		6083C11A1C78366900D17320 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C1191C78366900D17320 /* AppDelegate.m */; };
 		6083C11D1C78366900D17320 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C11C1C78366900D17320 /* ViewController.m */; };
@@ -38,8 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		608356DC1C7AA163002FE317 /* ACKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKApi.h; sourceTree = "<group>"; };
-		608356DD1C7AA163002FE317 /* libACKSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACKSDK.a; sourceTree = "<group>"; };
+		608356E11C7AB590002FE317 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
+		608356E21C7AB590002FE317 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		608356E31C7AB590002FE317 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		608356EC1C7ABDCE002FE317 /* ACKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKApi.h; sourceTree = "<group>"; };
+		608356ED1C7ABDCE002FE317 /* libACKSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACKSDK.a; sourceTree = "<group>"; };
 		6083C1121C78366900D17320 /* NHACKSDKPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHACKSDKPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6083C1161C78366900D17320 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6083C1181C78366900D17320 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +73,7 @@
 			files = (
 				6083C14F1C7836D700D17320 /* SystemConfiguration.framework in Frameworks */,
 				6083C14D1C7836CC00D17320 /* AdSupport.framework in Frameworks */,
-				608356DE1C7AA163002FE317 /* libACKSDK.a in Frameworks */,
+				608356EE1C7ABDCE002FE317 /* libACKSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,16 +97,34 @@
 		608356D71C7A9CEB002FE317 /* ACKSDK */ = {
 			isa = PBXGroup;
 			children = (
-				608356DB1C7AA163002FE317 /* debugVersion */,
+				608356EB1C7ABDCE002FE317 /* debugVersion */,
 			);
 			path = ACKSDK;
 			sourceTree = "<group>";
 		};
-		608356DB1C7AA163002FE317 /* debugVersion */ = {
+		608356DF1C7AB590002FE317 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				608356DC1C7AA163002FE317 /* ACKApi.h */,
-				608356DD1C7AA163002FE317 /* libACKSDK.a */,
+				608356E01C7AB590002FE317 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		608356E01C7AB590002FE317 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				608356E11C7AB590002FE317 /* Default-568@2x.png */,
+				608356E21C7AB590002FE317 /* Default.png */,
+				608356E31C7AB590002FE317 /* Default@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		608356EB1C7ABDCE002FE317 /* debugVersion */ = {
+			isa = PBXGroup;
+			children = (
+				608356EC1C7ABDCE002FE317 /* ACKApi.h */,
+				608356ED1C7ABDCE002FE317 /* libACKSDK.a */,
 			);
 			path = debugVersion;
 			sourceTree = "<group>";
@@ -147,6 +171,7 @@
 		6083C1151C78366900D17320 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				608356DF1C7AB590002FE317 /* Resources */,
 				6083C1161C78366900D17320 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -273,9 +298,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				608356E61C7AB590002FE317 /* Default@2x.png in Resources */,
 				6083C1251C78366900D17320 /* LaunchScreen.storyboard in Resources */,
 				6083C1221C78366900D17320 /* Assets.xcassets in Resources */,
+				608356E41C7AB590002FE317 /* Default-568@2x.png in Resources */,
 				6083C1201C78366900D17320 /* Main.storyboard in Resources */,
+				608356E51C7AB590002FE317 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NHACKSDKPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NHACKSDKPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
