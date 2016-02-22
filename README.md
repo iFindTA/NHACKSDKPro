@@ -14,7 +14,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 (注：请使用xCode4.5及以上版本)
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_0.png)
 
-[3]开发者需要在工程中链接上:SystemConfiguration.framework,AdSupport.framework。
+[3]开发者需要在工程中链接上:SystemConfiguration.framework,AdSupport.framework,Reachability。
 
 [4]由于使用了HTTPS安全链接，需要在info.plist文件中设置ATS项：
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_1.png)
