@@ -48,19 +48,19 @@
 }
 
 - (void)registerEvent {
-    NSString *m_phone = [NSString stringWithFormat:@"13023622337"];
+    NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
     BOOL ret = [ACKApi startRegisterWithUserAccount:m_phone];
     NSLog(@"result : %zd",ret);
 }
 
 - (void)authenticationEvent {
-    NSString *m_phone = [NSString stringWithFormat:@"13023622337"];
-    BOOL ret = [ACKApi startAuthenticationWithName:@"胡家驹" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
+    NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
+    BOOL ret = [ACKApi startAuthenticationWithName:@"张三" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
     NSLog(@"result : %zd",ret);
 }
 
 - (void)purchaseEvent {
-    NSString *m_phone = [NSString stringWithFormat:@"13023622337"];
+    NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
     BOOL ret = [ACKApi startPurchase:@1000 forAccount:m_phone];
     NSLog(@"result : %zd",ret);
 }
