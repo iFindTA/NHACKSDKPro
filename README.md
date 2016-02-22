@@ -34,6 +34,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_5.png)
 
 用户投资：
+
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_6.png)
 
 [3] 如果方法返回false，可打开终端SDK的log功能查看
