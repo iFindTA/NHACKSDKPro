@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608356DE1C7AA163002FE317 /* libACKSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608356DD1C7AA163002FE317 /* libACKSDK.a */; };
 		6083C1171C78366900D17320 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C1161C78366900D17320 /* main.m */; };
 		6083C11A1C78366900D17320 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C1191C78366900D17320 /* AppDelegate.m */; };
 		6083C11D1C78366900D17320 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C11C1C78366900D17320 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		6083C1251C78366900D17320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6083C1231C78366900D17320 /* LaunchScreen.storyboard */; };
 		6083C1301C78366900D17320 /* NHACKSDKProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C12F1C78366900D17320 /* NHACKSDKProTests.m */; };
 		6083C13B1C78366900D17320 /* NHACKSDKProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C13A1C78366900D17320 /* NHACKSDKProUITests.m */; };
-		6083C14B1C7836C100D17320 /* libACKSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6083C14A1C7836C100D17320 /* libACKSDK.a */; };
 		6083C14D1C7836CC00D17320 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6083C14C1C7836CC00D17320 /* AdSupport.framework */; };
 		6083C14F1C7836D700D17320 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6083C14E1C7836D700D17320 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		608356DC1C7AA163002FE317 /* ACKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKApi.h; sourceTree = "<group>"; };
+		608356DD1C7AA163002FE317 /* libACKSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACKSDK.a; sourceTree = "<group>"; };
 		6083C1121C78366900D17320 /* NHACKSDKPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHACKSDKPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6083C1161C78366900D17320 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6083C1181C78366900D17320 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		6083C1361C78366900D17320 /* NHACKSDKProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHACKSDKProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6083C13A1C78366900D17320 /* NHACKSDKProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHACKSDKProUITests.m; sourceTree = "<group>"; };
 		6083C13C1C78366900D17320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6083C1491C7836C100D17320 /* ACKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKApi.h; sourceTree = "<group>"; };
-		6083C14A1C7836C100D17320 /* libACKSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACKSDK.a; sourceTree = "<group>"; };
 		6083C14C1C7836CC00D17320 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6083C14E1C7836D700D17320 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -67,7 +67,7 @@
 			files = (
 				6083C14F1C7836D700D17320 /* SystemConfiguration.framework in Frameworks */,
 				6083C14D1C7836CC00D17320 /* AdSupport.framework in Frameworks */,
-				6083C14B1C7836C100D17320 /* libACKSDK.a in Frameworks */,
+				608356DE1C7AA163002FE317 /* libACKSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		608356D71C7A9CEB002FE317 /* ACKSDK */ = {
+			isa = PBXGroup;
+			children = (
+				608356DB1C7AA163002FE317 /* debugVersion */,
+			);
+			path = ACKSDK;
+			sourceTree = "<group>";
+		};
+		608356DB1C7AA163002FE317 /* debugVersion */ = {
+			isa = PBXGroup;
+			children = (
+				608356DC1C7AA163002FE317 /* ACKApi.h */,
+				608356DD1C7AA163002FE317 /* libACKSDK.a */,
+			);
+			path = debugVersion;
+			sourceTree = "<group>";
+		};
 		6083C1091C78366900D17320 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +130,7 @@
 		6083C1141C78366900D17320 /* NHACKSDKPro */ = {
 			isa = PBXGroup;
 			children = (
-				6083C1481C7836C100D17320 /* ACKSDK */,
+				608356D71C7A9CEB002FE317 /* ACKSDK */,
 				6083C1181C78366900D17320 /* AppDelegate.h */,
 				6083C1191C78366900D17320 /* AppDelegate.m */,
 				6083C11B1C78366900D17320 /* ViewController.h */,
@@ -151,15 +168,6 @@
 				6083C13C1C78366900D17320 /* Info.plist */,
 			);
 			path = NHACKSDKProUITests;
-			sourceTree = "<group>";
-		};
-		6083C1481C7836C100D17320 /* ACKSDK */ = {
-			isa = PBXGroup;
-			children = (
-				6083C1491C7836C100D17320 /* ACKApi.h */,
-				6083C14A1C7836C100D17320 /* libACKSDK.a */,
-			);
-			path = ACKSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +448,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NHACKSDKPro/ACKSDK",
+					"$(PROJECT_DIR)/NHACKSDKPro/ACKSDK/debugVersion",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PullBear.NHACKSDKPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +464,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NHACKSDKPro/ACKSDK",
+					"$(PROJECT_DIR)/NHACKSDKPro/ACKSDK/debugVersion",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PullBear.NHACKSDKPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";

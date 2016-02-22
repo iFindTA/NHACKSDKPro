@@ -42,6 +42,9 @@
     [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(purchaseEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    NSString *sdkVersion = [ACKApi version];
+    NSLog(@"ack sdk's version :%@",sdkVersion);
 }
 
 - (void)registerEvent {

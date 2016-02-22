@@ -25,7 +25,7 @@ static NSString *ACK_APP_KEY   = @"4FCUND77NX2C4S";
     // Override point for customization after application launch.
     
     //default is YES
-    [ACKApi enableLog:false];
+    [ACKApi enableLog:true];
     [ACKApi startWithAppkey:ACK_APP_KEY];
     
     return YES;
