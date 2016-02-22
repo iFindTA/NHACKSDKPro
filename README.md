@@ -58,11 +58,15 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 优化网络模块，原生判断
 ```
 
-###### Version:1.1.0
+###### Version:1.1.1
 ```
 简化API访问接口
 ```
 
+###### Version:0.1.1
+```
+new project for sdk
+```
 
 * * *
 ###### contact:
