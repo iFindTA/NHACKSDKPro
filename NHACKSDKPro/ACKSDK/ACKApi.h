@@ -12,7 +12,8 @@
  *  @brief SDK's Api
  *
  *  @attention tobe use please import:
- *  AdSupport.framework SystemConfiguration.framework
+ *  system framework :AdSupport.framework SystemConfiguration.framework
+ *  extend framework :Reachability
  *
  */
 @interface ACKApi : NSObject

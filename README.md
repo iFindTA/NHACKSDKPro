@@ -44,6 +44,22 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 ```
 具体在方法中所要完成的内容由你定义，具体可参考爱财客开发工具包中的[SDK Sample Demo](https://github.com/iFindTA/NHACKSDKPro)源码。
 
+#### 更新日志:
+
+###### Version:1.2.2
+```
+增加Reachability库依赖，需要导入此库
+```
+
+###### Version:1.2.1
+```
+优化网络模块，原生判断
+```
+
+###### Version:1.1.0
+```
+简化API访问接口
+```
 
 
 * * *

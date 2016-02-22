@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (nullable, nonatomic, strong) UILabel *label;
+
 @end
 
 @implementation ViewController
@@ -43,6 +45,10 @@
     [btn addTarget:self action:@selector(purchaseEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
+    bounds.origin.y += 100;
+    _label = [[UILabel alloc] initWithFrame:bounds];
+    [self.view addSubview:_label];
+    
     NSString *sdkVersion = [ACKApi version];
     NSLog(@"ack sdk's version :%@",sdkVersion);
 }
@@ -50,18 +56,21 @@
 - (void)registerEvent {
     NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
     BOOL ret = [ACKApi startRegisterWithUserAccount:m_phone];
+    [self.label setText:ret?@"1":@"0"];
     NSLog(@"result : %zd",ret);
 }
 
 - (void)authenticationEvent {
     NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
     BOOL ret = [ACKApi startAuthenticationWithName:@"张三" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
+    [self.label setText:ret?@"1":@"0"];
     NSLog(@"result : %zd",ret);
 }
 
 - (void)purchaseEvent {
     NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
     BOOL ret = [ACKApi startPurchase:@1000 forAccount:m_phone];
+    [self.label setText:ret?@"1":@"0"];
     NSLog(@"result : %zd",ret);
 }
 
