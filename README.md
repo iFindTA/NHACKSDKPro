@@ -9,7 +9,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 ##### 3.搭建开发环境
 [1] 在XCode中建立你的工程。
 
-[2] 将SDK文件中包含的libACKSDK.a，ACKApi.h 两个文件添加到你所建的工程中（如下图所示，建立了一个名为NHACKSDKPro 的工程，并把以上两个个文件添加到NHACKSDKPro文件夹下）。
+[2] 将SDK文件中包含的libACKSDK.a，ACKApi.h 两个文件添加到你所建的工程中（如下图所示，建立了一个名为NHACKSDKPro 的工程，并把以上两个文件添加到NHACKSDKPro文件夹下）。
 (注：请使用Xcode4.5及以上版本)
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_0.png)
 
