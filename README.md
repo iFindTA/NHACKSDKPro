@@ -1,7 +1,7 @@
 # 爱财客终端SDK文档
 ACK SDK for ios developement
 #### 接入指南
-注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉XCode开发工具的基本使用方法，以及具有一定的编程知识基础等。
+注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉Xcode开发工具的基本使用方法，以及具有一定的编程知识基础等。
 ##### 1.向爱财客注册你的应用程序appkey
 请到 [商家应用登记页面](https://ack.gongshidai.com/backstage/index.html#/access/home) 进行登记，登记并选择移动应用进行设置后，将获得Appkey，可立即用于开发。但应用登记完成后还需要提交审核，只有审核通过的应用才能正式发布使用。
 ##### 2.下载爱财客终端SDK文件
@@ -10,11 +10,13 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 ##### 3.搭建开发环境
 [1] 在XCode中建立你的工程。
 
-[2] 将SDK文件中包含的ACKSDK.a，ACKApi.h 两个文件添加到你所建的工程中（如下图所示，建立了一个名为NHACKSDKPro 的工程，并把以上两个个文件添加到NHACKSDKPro文件夹下）。
+[2] 将SDK文件中包含的libACKSDK.a，ACKApi.h 两个文件添加到你所建的工程中（如下图所示，建立了一个名为NHACKSDKPro 的工程，并把以上两个个文件添加到NHACKSDKPro文件夹下）。
 (注：请使用xCode4.5及以上版本)
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_0.png)
 
-[3]开发者需要在工程中链接上:SystemConfiguration.framework,AdSupport.framework,Reachability。
+[3]开发者需要在工程中链接
+系统库:SystemConfiguration.framework,AdSupport.framework
+第三方库：Reachability。
 
 [4]由于使用了HTTPS安全链接，需要在info.plist文件中设置ATS项：
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_1.png)
