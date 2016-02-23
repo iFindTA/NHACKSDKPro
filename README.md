@@ -73,10 +73,11 @@ new project for sdk
 ###### contact:
 **mail:nanhujiaju@gmail.com**
 
-""" java
+``` java
+
 public void require(String cmd,Bundle params,Callback callback) {
 		Command command = new Command(cmd, params, callback);
 		commandMap.put(command.serial, command);
 		commandQueue.add(command);
 	}
-"""
+```
