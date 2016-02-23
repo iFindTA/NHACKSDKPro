@@ -1,5 +1,4 @@
-# 爱财客终端SDK文档
-ACK SDK for ios developement
+# 爱财客终端SDK文档（for iOS）
 #### 接入指南
 注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉Xcode开发工具的基本使用方法，以及具有一定的编程知识基础等。
 ##### 1.向爱财客注册你的应用程序appkey
