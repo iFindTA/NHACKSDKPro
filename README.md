@@ -46,7 +46,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 具体在方法中所要完成的内容由你定义，具体可参考爱财客开发工具包中的[SDK Sample Demo](https://github.com/iFindTA/NHACKSDKPro)源码。
 
 * * *
-#### 错误Code:
+#### Response Code:
 
 ```
 |   code   |   description   |
