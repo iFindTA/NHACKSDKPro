@@ -17,8 +17,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_0.png)
 
 [3]开发者需要在工程中链接
-系统库:SystemConfiguration.framework,AdSupport.framework
-第三方库：Reachability([Resource Download](https://github.com/tonymillion/Reachability))。
+系统库:SystemConfiguration.framework,AdSupport.framework。
 
 [4]由于使用了HTTPS安全链接，需要在info.plist文件中设置ATS项：
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_1.png)
@@ -28,21 +27,57 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 
 ##### 4.在代码中使用开发工具包
 [1] 要使你的程序启动后爱财客后台记录到用户下载完毕动作，必须在代码中向爱财客服务端注册你的appkey。（如下图所示，在 AppDelegate 的 didFinishLaunchingWithOptions 函数中向爱财客注册appkey）
-![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_3.png)
+```ObjectiveC
+/*!
+ *  @brief 需替换为自己的appkey
+ */
+static NSString *ACK_APP_KEY   = @"4FCUND77NX2C4S";
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    
+    //default is YES
+    [ACKApi enableLog:true];
+    [ACKApi startWithAppkey:ACK_APP_KEY];
+    
+    return YES;
+}
+```
 
 [2] 现在，你的程序要实现用户注册、实名、投资等动作记录同步到爱财客服务端需要调用如下列方法：
 用户注册：
-![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_4.png)
+```ObjectiveC
+- (void)registerEvent {
+    NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
+    BOOL ret = [ACKApi registerWithUserAccount:m_phone];
+    [self.label setText:ret?@"1":@"0"];
+    NSLog(@"result : %zd",ret);
+}
+```
 
 实名认证：
-![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_5.png)
+```ObjectiveC
+- (void)authenticationEvent {
+    NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
+    BOOL ret = [ACKApi authenticationWithName:@"张三" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
+    [self.label setText:ret?@"1":@"0"];
+    NSLog(@"result : %zd",ret);
+}
+```
 
 用户投资：
-
-![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_6.png)
+```ObjectiveC
+- (void)purchaseEvent {
+    NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
+    BOOL ret = [ACKApi purchase:@1000 forAccount:m_phone];
+    [self.label setText:ret?@"1":@"0"];
+    NSLog(@"result : %zd",ret);
+}
+```
 
 [3] 如果方法返回false，可打开终端SDK的log功能查看
-```
+```ObjectiveC
 	//default is YES
     [ACKApi enableLog:true];
 ```
@@ -73,6 +108,12 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 * * *
 
 #### 更新日志:
+
+###### 版本:V1.2.3
+```
+* remove Reachability framework, judge the network by native code.
+* make the interface more simple
+```
 
 ###### 版本:V1.2.2
 ```

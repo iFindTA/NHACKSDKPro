@@ -75,7 +75,7 @@
  *
  *  @return result for register
  */
-+ (BOOL)startRegisterWithUserAccount:(NSString *)account;
++ (BOOL)registerWithUserAccount:(NSString *)account;
 
 /*!
  *  @brief authentication for user
@@ -86,7 +86,7 @@
  *
  *  @return result for authentication
  */
-+ (BOOL)startAuthenticationWithName:(NSString *)name withPhone:(NSString *)phone withID:(NSString *)nid;
++ (BOOL)authenticationWithName:(NSString *)name withPhone:(NSString *)phone withID:(NSString *)nid;
 
 /*!
  *  @brief purchase or investment for user
@@ -96,7 +96,7 @@
  *
  *  @return result for user puchase
  */
-+ (BOOL)startPurchase:(NSNumber *)amount forAccount:(NSString *)account;
++ (BOOL)purchase:(NSNumber *)amount forAccount:(NSString *)account;
 
 /*!
  *  @brief SDK's version

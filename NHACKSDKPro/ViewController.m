@@ -56,21 +56,21 @@
 
 - (void)registerEvent {
     NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
-    BOOL ret = [ACKApi startRegisterWithUserAccount:m_phone];
+    BOOL ret = [ACKApi registerWithUserAccount:m_phone];
     [self.label setText:ret?@"1":@"0"];
     NSLog(@"result : %zd",ret);
 }
 
 - (void)authenticationEvent {
     NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
-    BOOL ret = [ACKApi startAuthenticationWithName:@"张三" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
+    BOOL ret = [ACKApi authenticationWithName:@"张三" withPhone:m_phone withID:@"410222xxxxxxxx1552"];
     [self.label setText:ret?@"1":@"0"];
     NSLog(@"result : %zd",ret);
 }
 
 - (void)purchaseEvent {
     NSString *m_phone = [NSString stringWithFormat:@"1302362xxxx"];
-    BOOL ret = [ACKApi startPurchase:@1000 forAccount:m_phone];
+    BOOL ret = [ACKApi purchase:@1000 forAccount:m_phone];
     [self.label setText:ret?@"1":@"0"];
     NSLog(@"result : %zd",ret);
 }
