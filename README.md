@@ -18,7 +18,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 
 [3]开发者需要在工程中链接
 系统库:SystemConfiguration.framework,AdSupport.framework
-第三方库：Reachability。
+第三方库：Reachability([Resource Download](https://github.com/tonymillion/Reachability))。
 
 [4]由于使用了HTTPS安全链接，需要在info.plist文件中设置ATS项：
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_1.png)
