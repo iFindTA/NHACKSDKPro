@@ -1,4 +1,7 @@
 # 爱财客终端SDK文档（for iOS）
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
+[![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
+[![Platform](https://img.shields.io/badge/Build-Passed-green.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
 #### 接入指南
 注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉Xcode开发工具的基本使用方法，以及具有一定的编程知识基础等。
 ##### 1.向爱财客注册你的应用程序appkey
