@@ -48,7 +48,7 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 * * *
 #### 错误Code:
 
-```ObjectiveC
+```
 |   code   |   description   |
 |----------|-----------------|
 |    0     |    操作成功		
