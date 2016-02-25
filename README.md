@@ -17,7 +17,14 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_0.png)
 
 [3]开发者需要在工程中链接
-系统库:SystemConfiguration.framework,AdSupport.framework。
+系统库:
+<code>
+SystemConfiguration.framework,AdSupport.framework。
+</code>
+第三方：
+<code>
+RealReachability  [资源下载](https://github.com/dustturtle/RealReachability)
+</code>
 
 [4]由于使用了HTTPS安全链接，需要在info.plist文件中设置ATS项：
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_1.png)
@@ -108,6 +115,11 @@ static NSString *ACK_APP_KEY   = @"4FCUND77NX2C4S";
 * * *
 
 #### 更新日志:
+
+###### 版本:V1.3.1-Beta
+```
+引入RealReachability库，防止在网络假链接的情形下判断失败
+```
 
 ###### 版本:V1.2.3
 ```
