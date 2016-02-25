@@ -5,7 +5,7 @@
 #### 接入指南
 注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉Xcode开发工具的基本使用方法，以及具有一定的编程知识基础等。
 ##### 1.向爱财客注册你的应用程序appkey
-请到 [商家应用登记页面](https://ack.gongshidai.com/backstage/index.html#/access/home) 进行登记，登记并选择移动应用进行设置后，将获得Appkey，可立即用于开发。但应用登记完成后还需要提交审核，只有审核通过的应用才能正式发布使用。
+请到 [商家应用登记页面](https://ack.gongshidai.com/getappkey) 进行登记，登记并选择移动应用进行设置后，将获得Appkey，可立即用于开发。但应用登记完成后还需要提交审核，只有审核通过的应用才能正式发布使用。
 ##### 2.下载爱财客终端SDK文件
 SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 请前往“[资源下载页](https://github.com/iFindTA/NHACKSDKPro)”下载最新SDK包
