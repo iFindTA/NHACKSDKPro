@@ -13,7 +13,7 @@
  *
  *  @attention tobe use please import:
  *  system framework :AdSupport.framework SystemConfiguration.framework
- *  extend framework :Reachability
+ *  extend framework :RealReachability
  *
  */
 @interface ACKApi : NSObject

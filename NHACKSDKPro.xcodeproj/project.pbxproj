@@ -20,8 +20,8 @@
 		6083C13B1C78366900D17320 /* NHACKSDKProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6083C13A1C78366900D17320 /* NHACKSDKProUITests.m */; };
 		6083C14D1C7836CC00D17320 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6083C14C1C7836CC00D17320 /* AdSupport.framework */; };
 		6083C14F1C7836D700D17320 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6083C14E1C7836D700D17320 /* SystemConfiguration.framework */; };
-		60EE73741C7B02DA00736314 /* libACKSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EE73731C7B02DA00736314 /* libACKSDK.a */; };
-		B6CFDF039B04C072A47E8BDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC580CD35E74ACFEB53AFB2 /* libPods.a */; };
+		608A668C1C7EC71F00407207 /* libACKSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608A668B1C7EC71F00407207 /* libACKSDK.a */; };
+		F6832A1774ECBC7CBA62D5FA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EC731B388C7F9552AB7ADB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10EC731B388C7F9552AB7ADB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		608356E11C7AB590002FE317 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
 		608356E21C7AB590002FE317 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		608356E31C7AB590002FE317 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -63,11 +64,10 @@
 		6083C13C1C78366900D17320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6083C14C1C7836CC00D17320 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6083C14E1C7836D700D17320 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		60EE73721C7B02DA00736314 /* ACKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKApi.h; sourceTree = "<group>"; };
-		60EE73731C7B02DA00736314 /* libACKSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACKSDK.a; sourceTree = "<group>"; };
-		649AA9309BE46AF14A7BC204 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		A3666381C4E28C68C0133D8D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		BAC580CD35E74ACFEB53AFB2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		608A66881C7EA63D00407207 /* ACKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACKApi.h; sourceTree = "<group>"; };
+		608A668B1C7EC71F00407207 /* libACKSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACKSDK.a; sourceTree = "<group>"; };
+		AEA7B798C877A6F8B106D4D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D3AB6FF29756FEC38899602D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 			files = (
 				6083C14F1C7836D700D17320 /* SystemConfiguration.framework in Frameworks */,
 				6083C14D1C7836CC00D17320 /* AdSupport.framework in Frameworks */,
-				60EE73741C7B02DA00736314 /* libACKSDK.a in Frameworks */,
-				B6CFDF039B04C072A47E8BDB /* libPods.a in Frameworks */,
+				608A668C1C7EC71F00407207 /* libACKSDK.a in Frameworks */,
+				F6832A1774ECBC7CBA62D5FA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +126,8 @@
 				6083C12E1C78366900D17320 /* NHACKSDKProTests */,
 				6083C1391C78366900D17320 /* NHACKSDKProUITests */,
 				6083C1131C78366900D17320 /* Products */,
-				BB8B3415D378999DCF685D6B /* Pods */,
-				B8A26AD5959C24A44FAE8D28 /* Frameworks */,
+				7DF78703EE936D32B978E821 /* Pods */,
+				A2FC42387D0F4D645953DE25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +144,7 @@
 		6083C1141C78366900D17320 /* NHACKSDKPro */ = {
 			isa = PBXGroup;
 			children = (
-				60EE73711C7B02DA00736314 /* ACKSDK */,
+				608A66871C7EA63D00407207 /* ACKSDK */,
 				6083C1181C78366900D17320 /* AppDelegate.h */,
 				6083C1191C78366900D17320 /* AppDelegate.m */,
 				6083C11B1C78366900D17320 /* ViewController.h */,
@@ -185,30 +185,30 @@
 			path = NHACKSDKProUITests;
 			sourceTree = "<group>";
 		};
-		60EE73711C7B02DA00736314 /* ACKSDK */ = {
+		608A66871C7EA63D00407207 /* ACKSDK */ = {
 			isa = PBXGroup;
 			children = (
-				60EE73721C7B02DA00736314 /* ACKApi.h */,
-				60EE73731C7B02DA00736314 /* libACKSDK.a */,
+				608A66881C7EA63D00407207 /* ACKApi.h */,
+				608A668B1C7EC71F00407207 /* libACKSDK.a */,
 			);
 			path = ACKSDK;
 			sourceTree = "<group>";
 		};
-		B8A26AD5959C24A44FAE8D28 /* Frameworks */ = {
+		7DF78703EE936D32B978E821 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BAC580CD35E74ACFEB53AFB2 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BB8B3415D378999DCF685D6B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				649AA9309BE46AF14A7BC204 /* Pods.debug.xcconfig */,
-				A3666381C4E28C68C0133D8D /* Pods.release.xcconfig */,
+				AEA7B798C877A6F8B106D4D9 /* Pods.debug.xcconfig */,
+				D3AB6FF29756FEC38899602D /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2FC42387D0F4D645953DE25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10EC731B388C7F9552AB7ADB /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6083C13F1C78366900D17320 /* Build configuration list for PBXNativeTarget "NHACKSDKPro" */;
 			buildPhases = (
-				9D8C9DAC588E59441159379B /* Check Pods Manifest.lock */,
+				3E2A0286E639B5A3A7A31234 /* Check Pods Manifest.lock */,
 				6083C10E1C78366900D17320 /* Sources */,
 				6083C10F1C78366900D17320 /* Frameworks */,
 				6083C1101C78366900D17320 /* Resources */,
-				D22113F5306CC1066C3B7415 /* Embed Pods Frameworks */,
-				658ABE4C5861740BF471147B /* Copy Pods Resources */,
+				1A732A3DDD735D752AD56D89 /* Embed Pods Frameworks */,
+				753F361313C838BA4D673E97 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,22 +343,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		658ABE4C5861740BF471147B /* Copy Pods Resources */ = {
+		1A732A3DDD735D752AD56D89 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D8C9DAC588E59441159379B /* Check Pods Manifest.lock */ = {
+		3E2A0286E639B5A3A7A31234 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,19 +373,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D22113F5306CC1066C3B7415 /* Embed Pods Frameworks */ = {
+		753F361313C838BA4D673E97 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -536,7 +536,7 @@
 		};
 		6083C1401C78366900D17320 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 649AA9309BE46AF14A7BC204 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = AEA7B798C877A6F8B106D4D9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NHACKSDKPro/Info.plist;
@@ -554,7 +554,7 @@
 		};
 		6083C1411C78366900D17320 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3666381C4E28C68C0133D8D /* Pods.release.xcconfig */;
+			baseConfigurationReference = D3AB6FF29756FEC38899602D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NHACKSDKPro/Info.plist;

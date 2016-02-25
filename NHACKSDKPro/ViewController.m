@@ -50,8 +50,7 @@
     [self.view addSubview:_label];
     
     NSString *sdkVersion = [ACKApi version];
-    NSString *idfa = [ACKApi idfa];
-    NSLog(@"ack sdk's version :%@--idfa:%@",sdkVersion,idfa);
+    NSLog(@"ack sdk's version :%@",sdkVersion);
 }
 
 - (void)registerEvent {
