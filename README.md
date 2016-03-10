@@ -1,7 +1,7 @@
 # 爱财客终端SDK文档（for iOS）
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
 [![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
-[![Platform](https://img.shields.io/badge/Build-Passed-green.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
+[![Build](https://img.shields.io/badge/Build-Passed-green.svg)](https://ack.gongshidai.com/backstage/index.html#/access/home)
 #### 接入指南
 注：本文为爱财客iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉Xcode开发工具的基本使用方法，以及具有一定的编程知识基础等。
 ##### 1.向爱财客注册你的应用程序appkey
@@ -16,14 +16,9 @@ SDK文件包括 libACKSDK.a，ACKApi.h 二个。
 (注：请使用Xcode4.5及以上版本)
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ack_0.png)
 
-[3]开发者需要在工程中链接
-系统库:
+[3]开发者需要在工程中链接系统库:
 <code>
 SystemConfiguration.framework,AdSupport.framework。
-</code>
-第三方：
-<code>
-RealReachability  [资源下载](https://github.com/dustturtle/RealReachability)
 </code>
 
 [4]由于使用了HTTPS安全链接，需要在info.plist文件中设置ATS项：
@@ -115,6 +110,11 @@ static NSString *ACK_APP_KEY   = @"4FCUND77NX2C4S";
 * * *
 
 #### 更新日志:
+
+###### 版本:V1.3.2
+```
+减小SDK大小
+```
 
 ###### 版本:V1.3.1-Beta
 ```

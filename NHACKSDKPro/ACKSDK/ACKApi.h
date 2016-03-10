@@ -13,7 +13,6 @@
  *
  *  @attention tobe use please import:
  *  system framework :AdSupport.framework SystemConfiguration.framework
- *  extend framework :RealReachability
  *
  */
 @interface ACKApi : NSObject
@@ -35,7 +34,8 @@
 /*!
  *  @brief encypt data that transfer to server, default is YES
  *
- *  @attention this function has not been implemented
+ *  @attention this function has not been implemented !!!
+ *  @warning   this function has not been implemented !!!
  *
  *  @param enable wether enabled
  */
