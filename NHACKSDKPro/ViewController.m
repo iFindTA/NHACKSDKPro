@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    CGRect bounds = CGRectMake(100, 100, 200, 50);
+    CGRect bounds = CGRectMake(100, 50, 200, 50);
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = bounds;
     [btn setTitle:@"register" forState:UIControlStateNormal];
